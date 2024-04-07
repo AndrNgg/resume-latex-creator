@@ -10,5 +10,5 @@ Most currently available templates either focus on two columns, or are multiple 
 
 ```sh
 docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex sourabh_bajaj_resume.tex
+docker run --rm -i -v "$PWD":/data latex pdflatex resume_personal.tex
 ```

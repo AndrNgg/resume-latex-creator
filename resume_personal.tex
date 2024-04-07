@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% \newcommand{\resumeSubheading}[4]{
+%   \vspace{-2pt}\item
+%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & #2 \\
+%       \textit{\small#3} & \textit{\small #4} \\
+%     \end{tabular*}\vspace{-7pt}
+% }
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.9\textwidth}p{0.4\textwidth}@{}}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Andrew Ng} \\ \vspace{1pt}
+    \href{mailto:x@x.com}{\underline{ck.andrew.ng@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{www.linkedin.com/in/andrew-ck-ng/}} $|$
+    \small Nationality: Dutch $|$ 
+    {\small{Drivers License: B}} $|$  {\small{City: Almere}} $|$  
+    {\small{Languages: Dutch (fluent), English (Native) }}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Terraform Associate (003) - HashiCorp}{2024}
+      {Validates proficiency in utilizing Terraform to efficiently manage and provision infrastructure as code.}{}
+    \resumeSubheading
+      {AWS Devops Professional - Amazon Web Services (AWS)}{2023}
+      {Demonstrates mastery in implementing continuous integration, continuous delivery, and automation practices within AWS cloud environments.}{}
+    \resumeSubheading
+      {AWS Solutions Architect Professional - Amazon Web Services (AWS)}{2023}
+      {Showcases expertise in designing and deploying scalable, secure, and cost-effective cloud solutions on the AWS platform.}{}
+    \resumeSubheading
+      {Linux Professional institute (LPI) 1 - Pearson Vue}{2022}
+      {Validates foundational knowledge and skills in Linux system administration, including installation, maintenance, and troubleshooting.}{}
+    \resumeSubheading
+      {AWS Solutions Architect associate - Amazon Web Services (AWS)}{2021}
+      {Demonstrates proficiency in designing distributed systems and architecting scalable, secure, and reliable applications on the AWS platform.}{}
+    \resumeSubheading
+      {AWS re/Start Graduate - Amazon Web Services (AWS)}{2021}
+      {Provides individuals with no prior tech experience a pathway to jumpstart their careers in cloud computing through hands-on training, mentorship, and job placement assistance.}{}
+    \resumeSubheading
+      {Bachelor of Business Administration (BBA) - IBIS - Inholland HBO}{2014 -- 2019}
+      {Emphasizes design thinking, innovation, and conceptualization strategies, empowering graduates to drive creativity, problem-solving, and strategic decision-making in dynamic business environments}{}
+    \resumeSubheading
+      {Bachelor's degree, Information Technology (Incomplete) - Inholland HBO}{2012 -- 2014}
+      {Offers comprehensive knowledge and practical skills in software development, algorithms, data structures, and computer systems, preparing graduates for a wide range of opportunities in the technology industry.}{}
+    \resumeSubheading
+      {Dual Degree: Computer Science Programming/Networking - Walters State Community College }{2009 -- 2012}
+      {Associate level degree, integrating comprehensive programming and networking skills, provides a strong foundation for diverse career paths in technology.}{}
+  \resumeSubHeadingListEnd
+
+% %-----------Multiple Positions Heading-----------
+% %    \resumeSubSubheading
+% %     {Software Engineer I}{Oct 2014 - Sep 2016}
+% %     \resumeItemListStart
+% %        \resumeItem{Apache Beam}
+% %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+% %     \resumeItemListEnd
+% %    \resumeSubHeadingListEnd
+% %-------------------------------------------
+
+% -----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cloud/Devops Engineer}{March 2021 -- Present}
+      {AWS, Terraform, Ansible, Linux, Docker, Python, CI/CD}{TechNative BV}
+      \resumeItemListStart
+        \resumeItem{\textbf{Dreamlines GMBH}: Responsible for migration of various workloads hosted on EC2 to the AWS native service/s equivalent and upkeep of applications managed through Terraform.}
+        \resumeItem{\textbf{PastBook.com}: Blue/green CI/CD implementation on an account level using BitBucket Pipelines and migration of EC2 hosted services to AWS managed services such as ECS/Route53/DynamoDb through Terraform.}
+        \resumeItem{\textbf{TheClose App field-lab events-access}: Responsible for upkeep and maintenance of their Linux based infrastructure managed through Ansible hosted on linux machines.}
+        \resumeItem{\textbf{TechNative Managed Services}: As Part of the team, I was owner of the serverless Observability stack, helped create a landing-zone setup in Terraform based on AWS best practices and responsible for maintaining, onboarding and offboarding client AWS infrastructures.}
+        \resumeItem{\textbf{Well-Architected Reviews}: As Part of the Well Architected Team, I was responsible for conducting an average of 3 Well-architected reviews a year. Whereby I visit potential prospects and review their AWS infrastructure against the AWS well-architected Framework by using tools such as Prowler, CloudCraft and SteamPipe.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
