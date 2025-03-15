@@ -62,11 +62,7 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
 
 % \newcommand{\resumeSubheading}[4]{
 %   \vspace{-2pt}\item
@@ -88,8 +84,9 @@
     \item
     \begin{tabular*}p{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-4pt}
 }
+
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
@@ -98,14 +95,15 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{2pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -132,9 +130,36 @@
 \section{Profile}
 {\small{Dedicated to leveraging my skills to support organizations in identifying and deploying micro innovations aimed at enhancing the end-user experience. Additionally, I am enthusiastic about continual learning and expanding my expertise to cultivate new insights.}}
 
+% -----------EXPERIENCE-----------
+\vspace{0.3cm}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {TechNative BV}{2021 -- Present}
+      {Senior Cloud Engineer}{2023 -- Present}
+        \resumeItemListStart
+          \resumeItem{Lead cloud migrations, infrastructure automation, and AWS best practice implementations.}
+          \resumeItem{Owned the serverless observability stack and contributed to landing-zone setups in Terraform.}
+          \resumeItem{Conducted AWS Well-Architected Reviews, assessing infrastructure security, reliability, and cost efficiency.}
+        \resumeItemListEnd
+      {Cloud Engineer}{2022 - 2023}
+      \resumeItemListStart
+        \resumeItem{Migrated EC2-hosted workloads to AWS native services (ECS, Route 53, DynamoDB).}
+        \resumeItem{Implemented blue/green CI/CD pipelines with BitBucket for seamless deployments.}
+        \resumeItem{Assisted in AWS cloud infrastructure maintenance and troubleshooting.}
+      \resumeItemListEnd
+      {Junior Cloud Engineer}{2021 - 2022}
+      \resumeItemListStart
+        \resumeItem{Maintained Linux-based infrastructure using Ansible for automation and configuration management.}
+        \resumeItem{Supported the migration of workloads using Terraform and Ansible.}
+        \resumeItem{Contributed to internal tools and documentation for improved workflows.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-------------------------------------------
 
-%-----------EDUCATION-----------
-\section{Education}
+%-----------Certifications-----------
+\vspace{0.2cm}
+\section{Certifications}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Terraform Associate (003) - HashiCorp}{2024}
@@ -151,16 +176,22 @@
     \resumeSubheading
       {AWS re/Start Graduate - Amazon Web Services (AWS)}{2021}
       {Provides individuals with no prior tech experience a pathway to jumpstart their careers in cloud computing through hands-on training, mentorship, and job placement assistance.}{}
-    \resumeSubheading
-      {Bachelor of Business Administration (BBA) - IBIS - Inholland HBO}{2014 -- 2019}
-      {Emphasizes design thinking, innovation, and conceptualization strategies, empowering graduates to drive creativity, problem-solving, and strategic decision-making in dynamic business environments}{}
-    \resumeSubheading
-      {Bachelor's degree, Information Technology (Incomplete) - Inholland HBO}{2012 -- 2014}
-      {Offers comprehensive knowledge and practical skills in software development, algorithms, data structures, and computer systems, preparing graduates for a wide range of opportunities in the technology industry.}{}
-    \resumeSubheading
-      {Computer Science Programming/Networking - Walters State Comm. College}{2009 -- 2012}
-      {Associate level degree, integrating comprehensive programming and networking skills, provides a strong foundation for diverse career paths in technology.}{}
   \resumeSubHeadingListEnd
+
+  %-----------EDUCATION-----------
+\vspace{0.3cm}
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Bachelor of Business Administration (BBA) - IBIS - Inholland HBO}{2014 -- 2019}
+    {Emphasizes design thinking, innovation, and conceptualization strategies, empowering graduates to drive creativity, problem-solving, and strategic decision-making in dynamic business environments}{}
+  \resumeSubheading
+    {Bachelor's degree, Information Technology (Incomplete) - Inholland HBO}{2012 -- 2014}
+    {Offers comprehensive knowledge and practical skills in software development, algorithms, data structures, and computer systems, preparing graduates for a wide range of opportunities in the technology industry.}{}
+  \resumeSubheading
+    {Computer Science Programming/Networking - Walters State Comm. College}{2009 -- 2012}
+    {Associate level degree, integrating comprehensive programming and networking skills, provides a strong foundation for diverse career paths in technology.}{}
+\resumeSubHeadingListEnd
 
 % %-----------Multiple Positions Heading-----------
 % %    \resumeSubSubheading
@@ -172,27 +203,8 @@
 % %    \resumeSubHeadingListEnd
 % %-------------------------------------------
 
-% -----------EXPERIENCE-----------
-\vspace{0.5cm}
-\section{Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Cloud Engineer}{2021 -- Present}
-      {AWS, Terraform, Ansible, Linux, Docker, Python, CI/CD}{TechNative BV}
-      \resumeItemListStart
-        \resumeItem{\textbf{Dreamlines GMBH}: Responsible for migration of various workloads hosted on EC2 to the AWS native service/s equivalent and upkeep of applications managed through Terraform.}
-        \resumeItem{\textbf{PastBook.com}: Blue/green CI/CD implementation on an account level using BitBucket Pipelines and migration of EC2 hosted services to AWS managed services such as ECS/Route53/DynamoDb through Terraform.}
-        \resumeItem{\textbf{TheClose App field-lab events-access}: Responsible for upkeep and maintenance of their Linux based infrastructure managed through Ansible hosted on linux machines.}
-        \resumeItem{\textbf{TechNative Managed Services}: As Part of the team, I was owner of the serverless Observability stack, helped create a landing-zone setup in Terraform based on AWS best practices and responsible for maintaining, onboarding and offboarding client AWS infrastructures.}
-        \resumeItem{\textbf{Well-Architected Reviews}: As Part of the Well Architected Team, I was responsible for conducting an average of 3 Well-architected reviews a year. Whereby I visit potential prospects and review their AWS infrastructure against the AWS well-architected Framework by using tools such as Prowler, CloudCraft and SteamPipe.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-%-------------------------------------------
-
 % -----------Additional Activities-----------
-%-----------EDUCATION-----------
-\vspace{0.5cm}
+\vspace{0.3cm}
 \section{Additional Activities}
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -200,7 +212,7 @@
       {Engaged in workshops and presentations to introduce IT concepts to aspiring engineers, fostering interest and skill development in future professionals.}{}
     \resumeSubheading
       {Mentorship}{}
-      {Helping mentees navigate the challenges of public cloud concepts and build confidence.}{}
+      {Helping mentees navigate the challenges of public cloud concepts, build confidence, sparring and work/life balance.}{}
   \resumeSubHeadingListEnd
 %-------------------------------------------
 \end{document}
